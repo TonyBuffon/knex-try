@@ -3,10 +3,10 @@ const knex = require('knex');
 const config = {
   client: 'mysql2',
   connection: {
-    host: '18.157.127.87',
-    user: 'user2',
-    password: 'hRMyzHVgtWgDJAwe',
-    database: 'task_db',
+    host:process.env.HOST,
+    user:process.env.USER,
+    password:process.env.PASSWORD,
+    database:process.env.DB.
   },
   migrations: {
     tableName: 'knex_migrations',
